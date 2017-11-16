@@ -1,0 +1,30 @@
+{
+  "require": {
+    "monolog/monolog": "1.0.*",
+    "mdanter/ecc": "^0.4.0",
+    "sop/aes-kw": "^1.0",
+    "php-amqplib/php-amqplib": "^2.6",
+    "bunny/bunny": "^0.2.4",
+    "spomky-labs/php-aes-gcm": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "WeChat\\": [
+        "src/wechat/"
+      ]
+    },
+    "classmap": [
+      "AccountUser.php",
+      "src/wechat"
+    ],
+    "files": [
+      "myFunc.php",
+      "WeChat.class.php"
+    ],
+    "exclude-from-classmap": [
+      "/Tests/",
+      "/test/",
+      "/tests/"
+    ]
+  }
+}
